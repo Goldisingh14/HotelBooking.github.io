@@ -98,12 +98,12 @@ var swiper = new Swiper(".brand-slider", {
    
 const apiFatch = (country,city)=>{
     const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '1d8e55c203msh1726babd5f9e8cfp175db8jsn2815c021cdb4',
-            'X-RapidAPI-Host': 'best-booking-com-hotel.p.rapidapi.com'
-        }
-    };
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'e6678c1945msh73572c00f396b57p1b9576jsnb0d6e9de7044',
+		'X-RapidAPI-Host': 'best-booking-com-hotel.p.rapidapi.com'
+	}
+};
 
 
 fetch(`https://best-booking-com-hotel.p.rapidapi.com/booking/best-accommodation?cityName=${city}&countryName=${country}` , options)
